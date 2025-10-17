@@ -1,26 +1,37 @@
 @import url(https://fonts.bunny.net/css?family=alegreya-sans-sc:300,300i);
 
 body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
 }
 
-.header {
-    font: 1.3rem;
-    padding: 0.5em;
-    background: #596D48;
-    position: relative;
-    width: 260px;
-    height: 500px;
-    margin: 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
+.odin-background {
+    position: absolute;
+    right: 70%;
+    height: 100%;
+    z-index: -1;
+}
+
+.image-body {
+    position: absolute;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.image-heading p{
+    position: absolute;
+    background: black;
+    opacity: 0.6;
 }
 
 form {
-    position: relative;
-    width: 740px;
-    height: 500px;
+    position: absolute;
+    left: 30%;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
     padding: 1em;
     box-sizing: border-box;
@@ -38,3 +49,11 @@ input {
     box-sizing: border-box;
 }
 
+input :invalid {
+    border: red;
+}
+
+input :focus {
+    border: blue;
+    box-shadow: .05em;
+}
