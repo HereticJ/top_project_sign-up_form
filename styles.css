@@ -2,46 +2,70 @@
 
 body {
     display: flex;
+    flex-direction: row;
 }
 
-.odin-background {
+.header {
     position: absolute;
-    right: 70%;
-    height: 100%;
+    width: 427px;
+    height: 1000px;
+}
+
+.background {
+    position: relative;
+    width: 427px;
+    height: 1000px;
     z-index: -1;
 }
 
 .image-body {
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
     background: black;
     opacity: 0.6;
     color: white;
-    top: 8rem;
-    text-align: center;
-    font-size: 1.2em;
+    top: 12rem;
+}
+
+.image-heading {
+    width: 427px;
 }
 
 .image-heading p{
-    position: absolute;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    position: relative;
     background: black;
-    opacity: 0.6;
+    font-size: 3em;
+}
+
+.odin-logo {
+    width: 70px;
+    height: 100px;
+}
+
+.credit {
+    justify-content: flex-end;
+    font-size: 0.8em;
 }
 
 form {
-    position: absolute;
-    left: 30%;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1em;
-    box-sizing: border-box;
+    position: relative;
+    height: 1000px;
+    width: 573px;
+    margin-left: 427px;
     background: white;
 
 }
 
+.fieldset {
+    height: 600px;
+    width: 573px;
+}
+
 button,
 input {
-    font-family: inherit;
+    font-family: 'Alegreya Sans SC', sans-serif;
     width: 150px;
     padding: 0;
     margin: 0;
