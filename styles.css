@@ -12,40 +12,36 @@ body {
 }
 
 .background {
-    position: relative;
-    width: 427px;
-    height: 1000px;
+    position: absolute;
+    width: 100%;
     z-index: -1;
 }
 
 .image-body {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
+    position: relative;
+    width: 100%;
     background: black;
     opacity: 0.6;
     color: white;
-    top: 12rem;
-}
-
-.image-heading {
-    width: 427px;
-}
-
-.image-heading p{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    position: relative;
-    background: black;
+    top: 8rem;
+    text-align: center;
     font-size: 3em;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .odin-logo {
-    width: 70px;
+    width: 80px;
     height: 100px;
+    padding-top: 15px;
+}
+
+.odin-text {
+    position: relative;
 }
 
 .credit {
-    justify-content: flex-end;
+    position: absolute;
+    top: 38em;
     font-size: 0.8em;
 }
 
