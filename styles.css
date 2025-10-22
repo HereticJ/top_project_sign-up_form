@@ -13,6 +13,7 @@ body {
 
 .background {
     position: absolute;
+    height: 100%;
     width: 100%;
     z-index: -1;
 }
@@ -37,35 +38,84 @@ body {
 
 .odin-text {
     position: relative;
+    bottom: 25px;
 }
 
 .credit {
     position: absolute;
-    top: 38em;
+    top: 75em;
     font-size: 0.8em;
+}
+
+.right-side {
+    position: absolute;
+    top: 100px;
+    left: 450px;
+    padding-left: 30px;
+}
+
+.start {
+    position: relative;
+    width: 500px;
+    font-size: 1.4em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+legend {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 form {
     position: relative;
-    height: 1000px;
-    width: 573px;
-    margin-left: 427px;
     background: white;
-
 }
 
-.fieldset {
+fieldset {
+    position: relative;
     height: 600px;
-    width: 573px;
 }
 
-button,
-input {
+.name1 {
+    top: 20px;
+    left: 610px;
+    height: 20px;
+    width: 20px;
+}
+
+.name2 {
+    top: 20px;
+    left: 1040px;
+    height: 20px;
+    width: 20px;
+
+}
+
+.contact {
+    top: 200px;
+    height: 100px;
+    width: 200px;
+}
+
+.password {
+    top: 300px;
+    height: 100px;
+    width: 200px;
+}
+
+button {
+    position: relative;
+    top: 30px;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    background-color: green;
+    font-size: 1.1em;
     font-family: 'Alegreya Sans SC', sans-serif;
-    width: 150px;
-    padding: 0;
-    margin: 0;
     border: #E5E7EB;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
@@ -76,4 +126,9 @@ input :invalid {
 input :focus {
     border: blue;
     box-shadow: .05em;
+}
+
+.login {
+    position: relative;
+    top: 200px;
 }
