@@ -36,7 +36,7 @@
         <legend>Let's do this!</legend>
 
         <div class="formblock">
-            <form action="example.com/path" method="post">
+            <form action="example.com/path" method="get">
                 <fieldset>
                     <div class="name1">
                         <label for="first_name">FIRST NAME:</label>
@@ -52,7 +52,8 @@
                     </div>
                     <div class="phone">
                         <label for="phone_number">PHONE NUMBER:</label>
-                        <input type="number" id="phone_number" name="phone_number" placeholder="(846) 763-4699" required>
+                        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="(846) 763-4699" required>
                     </div>
                     <div class="password">
                         <label for="user_password">PASSWORD:</label>

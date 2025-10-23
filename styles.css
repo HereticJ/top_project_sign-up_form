@@ -5,7 +5,7 @@
 .header {
     position: absolute;
     width: 427px;
-    height: 1000px;
+    height: 1200px;
 }
 
 .background {
@@ -40,7 +40,7 @@
 
 .credit {
     position: relative;
-    top: 500px;
+    top: 660px;
     left: 130px;
     color: white;
     font-size: 0.8em;
@@ -91,6 +91,7 @@ fieldset {
 }
 
 .formblock {
+    width: 70%;
     border-bottom: 3px groove #f2f2f2;
     border-top: 1px groove #f2f2f2;
 }
@@ -159,7 +160,7 @@ button {
     position: relative;
     top: 10px;
     left: 32px;
-    width: 200px;
+    width: 175px;
     padding: 20px;
     color: white;
     background-color: #00b3b3;
@@ -172,7 +173,7 @@ button {
 
 .login {
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 32px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
