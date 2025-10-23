@@ -1,9 +1,6 @@
 @import url(https://fonts.bunny.net/css?family=alegreya-sans-sc:300,300i);
 
-body {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .header {
     position: absolute;
@@ -13,7 +10,7 @@ body {
 
 .background {
     position: absolute;
-    height: 100%;
+    height: 75%;
     width: 100%;
     z-index: -1;
 }
@@ -42,28 +39,40 @@ body {
 }
 
 .credit {
-    position: absolute;
-    top: 75em;
+    position: relative;
+    top: 500px;
+    left: 130px;
+    color: white;
     font-size: 0.8em;
 }
 
 .right-side {
     position: absolute;
     top: 100px;
-    left: 450px;
-    padding-left: 30px;
+    left: 437px;
 }
 
 .start {
     position: relative;
     width: 500px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 1.4em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.command {
+    padding-bottom: 10px;
+    padding-left: 30px;
     font-size: 1.4em;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 legend {
     position: relative;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;
     font-size: 1.4em;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
@@ -74,61 +83,109 @@ form {
 }
 
 fieldset {
+    box-sizing: border-box;
     position: relative;
-    height: 600px;
+    padding-left: 30px;
+    height: 200px;
+    border: white;
+}
+
+.formblock {
+    border-bottom: 3px groove #f2f2f2;
+    border-top: 1px groove #f2f2f2;
 }
 
 .name1 {
-    top: 20px;
-    left: 610px;
-    height: 20px;
-    width: 20px;
+    position: relative;
+    display: inline-block;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    height: 50px;
+    width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
 }
 
 .name2 {
-    top: 20px;
-    left: 1040px;
-    height: 20px;
-    width: 20px;
-
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
 }
 
-.contact {
-    top: 200px;
-    height: 100px;
+.email {
+    position: relative;
+    display: inline-block;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    height: 50px;
     width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
+}
+
+.phone {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
 }
 
 .password {
-    top: 300px;
-    height: 100px;
+    position: relative;
+    display: inline-block;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    height: 50px;
     width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
+}
+
+.confirm {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 0.8em;
 }
 
 button {
     position: relative;
-    top: 30px;
+    top: 10px;
+    left: 32px;
     width: 200px;
     padding: 20px;
     color: white;
-    background-color: green;
-    font-size: 1.1em;
+    background-color: #00b3b3;
+    font-size: 1.2em;
     font-family: 'Alegreya Sans SC', sans-serif;
     border: #E5E7EB;
     border-radius: 15px;
     box-sizing: border-box;
 }
 
-input :invalid {
-    border: red;
+.login {
+    position: relative;
+    top: 30px;
+    left: 32px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+  border-color: green;
 }
 
 input :focus {
     border: blue;
     box-shadow: .05em;
-}
-
-.login {
-    position: relative;
-    top: 200px;
 }
